@@ -7,17 +7,21 @@ DETECTOR=20
 ROC=2
 
 SLOT=14
+REFINDEX=3
+  11,1000,   0,   3  ! pFADC_TREF_ROC2
    0,   1,   1,   0  ! pAERSUM
    1,   1,   2,   0  ! pHGCERSUM
    2,   1,   3,   0  ! pNGCERSUM
   11,   1,   4,   0  ! pFADC_TREF_ROC2
 
 SLOT=20
+REFINDEX=1
+  15,1000,   0,   1  ! pTRef1
   15,   2,   1,   1  ! pT1
 
 SLOT=19
 REFINDEX=0
-  31,1000,   0,   0  ! pTRef
+  31,1000,   0,   0  ! pTRef2
   31,   2,   2,   1  ! pT2
   32,   2,   3,   1  ! p1X
   33,   2,   4,   1  ! p1Y
@@ -29,7 +33,7 @@ REFINDEX=0
   39,   2,  10,   1  ! pAERSUM
   40,   2,  11,   1  ! pHGCERSUM
   41,   2,  12,   1  ! pNGCERSUM
-  42,   2,  23,   1  ! pHODO_EDTM
+  42,   2,  23,   1  ! pEDTM
   48,   2,  24,   1  ! pTRIG1
   49,   2,  25,   1  ! pTRIG2
   50,   2,  26,   1  ! pTRIG3
@@ -42,6 +46,16 @@ REFINDEX=0
   61,   2,  33,   1  ! hTRIG4
   62,   2,  34,   1  ! hTRIG5
   63,   2,  35,   1  ! hTRIG6
+  64,   2,  36,   1  ! pSTOF
+  65,   2,  37,   1  ! pEL_LO
+  66,   2,  38,   1  ! pEL_HI
+  67,   2,  39,   1  ! pEL_REAL
+  68,   2,  40,   1  ! pEL_CLEAN
+  72,   2,  41,   1  ! hSTOF
+  73,   2,  42,   1  ! hEL_LO
+  74,   2,  43,   1  ! hEL_HI
+  75,   2,  44,   1  ! hEL_REAL
+  76,   2,  45,   1  ! hEL_CLEAN
 
 ROC=6
 
@@ -80,7 +94,12 @@ DETECTOR=24
 
 ROC=2
 
+SLOT=14
+REFINDEX=3
+  11,1000,   0,   3  ! pFADC_TREF_ROC2
+
 SLOT=13
+REFINDEX=3
   12,   1,   1,   0  ! pHGCER01
   13,   1,   2,   0  ! pHGCER02
   14,   1,   3,   0  ! pHGCER03
